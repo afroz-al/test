@@ -3,4 +3,4 @@ function onMessageSendHandler(event) {
 }
 
 //Office.actions.associate("checkSignature", onMessageSendHandler);
-Office.actions.associate("OnMessageSendHandler", onMessageSendHandler);
+Office.actions.associate("onMessageSendHandler", onMessageSendHandler);
