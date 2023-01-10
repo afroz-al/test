@@ -5,18 +5,19 @@
   xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
   xsi:type="MailApp">
   <Id>e8ec7721-10c8-4dba-b3f4-a08098cf5424</Id>
+  <!-- <Id>afde34e6-58a4-4122-8a52-ef402180a878</Id> -->
   <Version>1.0.0.0</Version>
   <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Attestation" />
   <Description DefaultValue="Attestation" />
   <IconUrl
-    DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/outlook-set-signature/assets/final_logo.png" />
+    DefaultValue="https://raw.githubusercontent.com/afroz-al/test/main/ic_fluent_checkbox_person_24_regular.svg" />
   <HighResolutionIconUrl
-    DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/outlook-set-signature/assets/final_logo.png" />
+    DefaultValue="https://raw.githubusercontent.com/afroz-al/test/main/ic_fluent_checkbox_person_24_regular.svg" />
   <SupportUrl DefaultValue="https://www.contoso.com/help" />
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://localhost:3000/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox" />
@@ -29,7 +30,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://attestation-dev.office.com/panel.html" />
+        <SourceLocation DefaultValue="https://localhost:3000/panel.html" />
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -120,21 +121,21 @@
       <Resources>
         <bt:Images>
           <bt:Image id="Icon.16x16"
-            DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/outlook-set-signature/assets/final_logo.png" />
+            DefaultValue="https://raw.githubusercontent.com/afroz-al/test/main/ic_fluent_checkbox_person_24_regular.svg" />
           <bt:Image id="Icon.32x32"
-            DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/outlook-set-signature/assets/final_logo.png" />
+            DefaultValue="https://raw.githubusercontent.com/afroz-al/test/main/ic_fluent_checkbox_person_24_regular.svg" />
           <bt:Image id="Icon.80x80"
-            DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/outlook-set-signature/assets/final_logo.png" />
+            DefaultValue="https://raw.githubusercontent.com/afroz-al/test/main/ic_fluent_checkbox_person_24_regular.svg" />
         </bt:Images>
         <bt:Urls>
           <bt:Url id="Attestation.Url.home"
-            DefaultValue="https://attestation-dev.office.com/panel.html" />
+            DefaultValue="https://localhost:3000/panel.html" />
           <bt:Url id="WebViewRuntime.Url"
-            DefaultValue="https://attestation-dev.office.com/panel.html" />
+            DefaultValue="https://localhost:3000/panel.html" />
           <bt:Url id="runtimeJs"
-            DefaultValue="https://attestation-dev.office.com/panel.js"></bt:Url>
+            DefaultValue="https://localhost:3000/runtime.js"></bt:Url>
           <bt:Url id="Attestation.read.Url.home"
-            DefaultValue="https://attestation-dev.office.com/home?disableCreate=true"></bt:Url>
+            DefaultValue="https://localhost:3000/home?disableCreate=true"></bt:Url>
 
         </bt:Urls>
         <bt:ShortStrings>
@@ -152,15 +153,11 @@
         </bt:LongStrings>
       </Resources>
       <!-- <WebApplicationInfo>
-        <Id>ea62c1c6-550b-4238-8ea7-c55a85d86be8</Id>
-      <Resource>https://attestation-dev.office.com/ea62c1c6-550b-4238-8ea7-c55a85d86be8</Resource>
-      <Scopes>
-      <Scope>openid</Scope>
-          <Scope>profile</Scope>
-      <Scope>offline_access</Scope>
-      <Scope>files.readwrite</Scope>
-          <Scope>mail.read</Scope>
-      </Scopes>
+        <Id>2ec332ce-5e29-4f91-9ae4-a9d0a296ad77</Id>
+      <Resource>api://localhost:3000/2ec332ce-5e29-4f91-9ae4-a9d0a296ad77</Resource>
+        <Scopes>
+      <Scope>userimpersonation</Scope>
+        </Scopes>
       </WebApplicationInfo> -->
     </VersionOverrides>
   </VersionOverrides>
